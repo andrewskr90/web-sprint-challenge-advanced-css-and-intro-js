@@ -259,21 +259,6 @@ function get20s(array){
 console.log('task 4', get20s(artists));
 
 
-// function get20s(array){
-//   const artists20 = [];
-//   for(let i=0;i<array.length;i++){
-//     const str = array[i]["years"]
-//     const chars = str.split('');
-//     if(array[i]["years"].includes("19** - 19*")){
-//       artists20.push(array[i]["name"]);
-//     }
-    
-//   }
-//   return artists20;
-// }
-// console.log('task 4', get20s(artists));
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -309,14 +294,17 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
-    array.push({"id": 20,
-      "name": "Kyle Andrews", 
-      "years": "1990 - present",
-      "genre": "Web Design", 
-      "nationality": "American",
-      "bio": "lorem ipsum"});
-      return artists;
-  }
+    const newArtist= {
+      "id" : 20, 
+      "name" : "Your Name Here",
+      "years" : "Your Birth Year - current day",
+      "genre" : "Web Design",
+      "nationality" : "Your Nationality Here",
+      "bio" : "Add 1-2 sentences (or use lorem ipsum)",
+    }
+    array.push(newArtist);
+    return array;
+  } 
   console.log('task 6', addArtist(artists));
 
   
