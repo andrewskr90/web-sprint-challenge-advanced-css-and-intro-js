@@ -246,8 +246,32 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
   const artists20 = [];
-
+  for(let i=0;i<array.length;i++){
+    const str = array[i]["years"]
+    const chars = str.split('');
+    if(chars[1]==='9' && chars[8]==='9'){
+      artists20.push(array[i]["name"]);
+    }
+    
+  }
+  return artists20;
 }
+console.log('task 4', get20s(artists));
+
+
+// function get20s(array){
+//   const artists20 = [];
+//   for(let i=0;i<array.length;i++){
+//     const str = array[i]["years"]
+//     const chars = str.split('');
+//     if(array[i]["years"].includes("19** - 19*")){
+//       artists20.push(array[i]["name"]);
+//     }
+    
+//   }
+//   return artists20;
+// }
+// console.log('task 4', get20s(artists));
 
 
 
